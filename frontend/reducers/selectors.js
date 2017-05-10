@@ -1,9 +1,7 @@
-import value from 'lodash/value';
+import values from 'lodash/values';
 
 const selectAllPokemon = (state) => {
-  let array = [];
-  Object.keys(state.pokemon).forEach( (poke_id) => array.push(state.pokemon[poke_id]) );
-  return array;
+  return values(state.pokemon);
 };
 
 export default selectAllPokemon;
