@@ -1,0 +1,35 @@
+section {
+  display:flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+.pokedex > ul {
+  width: 270px;
+}
+
+.pokemon-index-item {
+  border-top: 1px solid black;
+  width: 100%;
+  padding: 5px;
+
+}
+
+.pokemon-index-item:hover {
+  background-color: grey;
+}
+
+.pokemon-index-item span {
+  font-size: 15px;
+}
+
+.pokemon-index-item img {
+  width: 20px;
+  height:20px;
+  padding: 0 8px;
+}
