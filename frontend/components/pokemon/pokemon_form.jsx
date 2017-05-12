@@ -1,5 +1,6 @@
 import React from 'react';
 import merge from 'lodash/merge';
+import { withRouter } from 'react-router-dom';
 
 class PokemonForm extends React.Component {
   constructor(props) {
@@ -26,7 +27,9 @@ class PokemonForm extends React.Component {
     const {move1, move2} = this.state;
     const newState = merge({}, this.state, {moves: [move1,move2]});
     console.log(newState);
-    this.props.createNewPokemon(newState);
+    this.props.createNewPokemon(newState).then((newPokemon) => {
+      this.props.history.push(`pokemon/${newPokemon.id}`);
+    });
   }
 
   render(){
@@ -80,4 +83,4 @@ class PokemonForm extends React.Component {
   }
 }
 
-export default PokemonForm;
+export default withRouter(PokemonForm);

@@ -2,6 +2,10 @@ section {
   display:flex;
 }
 
+.pokedex {
+  height: 130%
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -11,6 +15,9 @@ ul {
 
 .pokedex > ul {
   width: 270px;
+  padding-right: 10px;
+  height: 100%;
+  overflow: scroll;
 }
 
 .pokemon-index-item {
@@ -32,4 +39,14 @@ ul {
   width: 20px;
   height:20px;
   padding: 0 8px;
+}
+
+.pokedex-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pokedex-logo > img {
+  margin-left: 40px;
+  padding: 5px 0;
 }
