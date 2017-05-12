@@ -1,0 +1,40 @@
+.create-pokemon-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+}
+
+input {
+  margin: 20px 0;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+select {
+  margin: 20px 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid black;
+  background: white;
+  -webkit-appearance: none;
+}
+
+.create-pokemon-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 10px;
+}
+
+.create-pokemon-button button {
+  height: 30px;
+  border-radius: 10px;
+  background: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
